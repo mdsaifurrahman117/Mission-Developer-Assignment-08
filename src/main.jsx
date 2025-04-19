@@ -5,6 +5,8 @@ import './index.css'
 import App from './App.jsx'
 import Root from './layout/Root';
 import Error_page from "./pages/Error_page.jsx";
+import Statistic from "./pages/Statistic.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 const router = createBrowserRouter([
             {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
                                     {
                                                 path: "/",
                                                 element: <App />
+                                    },
+                                    {
+                                                path: "/statistic",
+                                                element: <Statistic/>
+                                    },
+                                    {
+                                                path: "/dashboard",
+                                                element: <Dashboard/>
                                     }
                         ]
             },
