@@ -8,13 +8,13 @@ const Header = () => {
             useEffect( () => {location}, [] );
 
             return (
-                        <header className={` fixed top-0 z-[999] w-full mx-auto  ${location.pathname === "/" ? "bg-transparent top-5 " : " shadow-sm"} `}>
+                        <header className={` fixed top-0 z-[999] w-full mx-auto  ${location.pathname === "/" ? "bg-primary top-0 " : " shadow-sm"} `}>
                                     <nav className="w-11/12 mx-auto flex flex-row py-3">
                                                 <div className="navbar-start">
                                                             <NavLink 
                                                                         to={"/"}
                                                                         className={` font-sora font-semibold text-xl 
-                                                                        ${location.pathname === "/" ? "text-white ml-3" : "text-black"}`}
+                                                                        ${location.pathname === "/" ? "text-white" : "text-black"}`}
                                                             >Gadget Heaven</NavLink>
                                                 </div>
                                                 <div className="navbar-center hidden lg:flex">

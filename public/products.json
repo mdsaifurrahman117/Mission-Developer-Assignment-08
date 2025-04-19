@@ -1,0 +1,227 @@
+[
+            {
+                        "product_id": "LAP1001",
+                        "product_title": "Dell XPS 15",
+                        "product_image": "https://i.postimg.cc/6pMCR6QP/Dell-XPS-15.jpg",
+                        "category": "Laptop",
+                        "price": 1499.99,
+                        "description": "High-performance laptop with stunning 4K OLED display and powerful hardware.",
+                        "Specification": [
+                                    "Intel Core i7 13th Gen",
+                                    "16GB DDR5 RAM",
+                                    "512GB SSD",
+                                    "NVIDIA RTX 4060",
+                                    "15.6\" 4K OLED"
+                        ],
+                        "availability": true,
+                        "rating": 4.6,
+                        "brand": "Dell",
+                        "review": {
+                                    "user": "Alex Johnson",
+                                    "comment": "Absolutely love the display and speed. Great for both work and creative tasks.",
+                                    "stars": 5
+                        }
+            },
+            {
+                        "product_id": "LAP1002",
+                        "product_title": "MacBook Air M3",
+                        "product_image": "https://i.postimg.cc/br0tvpM3/mba15-m3.webp",
+                        "category": "Laptop",
+                        "price": 1299.00,
+                        "description": "Sleek and powerful laptop with Apple's M3 chip, designed for efficiency.",
+                        "Specification": [
+                                    "Apple M3 Chip",
+                                    "8GB Unified RAM",
+                                    "256GB SSD",
+                                    "13.6\" Liquid Retina Display"
+                        ],
+                        "availability": true,
+                        "rating": 4.9,
+                        "brand": "Apple",
+                        "review": {
+                                    "user": "Samantha Lee",
+                                    "comment": "Battery life is amazing and it's so light! Perfect for travel.",
+                                    "stars": 5
+                        }
+            },
+            {
+                        "product_id": "LAP1003",
+                        "product_title": "HP Spectre x360",
+                        "product_image": "https://i.postimg.cc/rs24cKhD/HP-specter-x360.avif",
+                        "category": "Laptop",
+                        "price": 1399.99,
+                        "description": "Convertible 2-in-1 laptop with powerful specs and a touchscreen display.",
+                        "Specification": [
+                                    "Intel Core i7 12th Gen",
+                                    "16GB RAM",
+                                    "1TB SSD",
+                                    "13.5\" OLED Touchscreen"
+                        ],
+                        "availability": true,
+                        "rating": 4.5,
+                        "brand": "HP",
+                        "review": {
+                                    "user": "David Nguyen",
+                                    "comment": "Very versatile and responsive. Love using it in tablet mode.",
+                                    "stars": 4
+                        }
+            },
+            {
+                        "product_id": "LAP1004",
+                        "product_title": "Lenovo Legion 5 Pro",
+                        "product_image": "https://i.postimg.cc/7Lc7sB0M/legion-5-pro.jpg",
+                        "category": "Laptop",
+                        "price": 1549.99,
+                        "description": "Gaming laptop with high refresh rate display and powerful GPU.",
+                        "Specification": [
+                                    "AMD Ryzen 7 6800H",
+                                    "32GB DDR5 RAM",
+                                    "1TB SSD",
+                                    "NVIDIA RTX 3070",
+                                    "16\" WQXGA 165Hz"
+                        ],
+                        "availability": false,
+                        "rating": 4.7,
+                        "brand": "Lenovo",
+                        "review": {
+                                    "user": "Carlos Vega",
+                                    "comment": "Performs like a beast! Runs all games on ultra settings.",
+                                    "stars": 5
+                        }
+            },
+            {
+                        "product_id": "LAP1005",
+                        "product_title": "Asus ZenBook 14",
+                        "product_image": "https://i.postimg.cc/50CzZwmc/ASUS-Zenbook-14.webp",
+                        "category": "Laptop",
+                        "price": 999.00,
+                        "description": "Compact ultrabook with great battery life and display quality.",
+                        "Specification": [
+                                    "Intel Core i5 12th Gen",
+                                    "8GB RAM",
+                                    "512GB SSD",
+                                    "14\" FHD NanoEdge Display"
+                        ],
+                        "availability": true,
+                        "rating": 4.4,
+                        "brand": "Asus",
+                        "review": {
+                                    "user": "Meera Patel",
+                                    "comment": "Lightweight and reliable. Ideal for students and professionals.",
+                                    "stars": 4
+                        }
+            },
+            {
+                        "product_id": "LAP1006",
+                        "product_title": "Acer Aspire 7",
+                        "product_image": "https://i.postimg.cc/CMbD7s1k/Acer-Aspire-7.webp",
+                        "category": "Laptop",
+                        "price": 799.99,
+                        "description": "Budget gaming laptop with dedicated GPU and powerful performance.",
+                        "Specification": [
+                                    "AMD Ryzen 5 5600H",
+                                    "8GB RAM",
+                                    "512GB SSD",
+                                    "NVIDIA GTX 1650",
+                                    "15.6\" FHD Display"
+                        ],
+                        "availability": true,
+                        "rating": 4.2,
+                        "brand": "Acer",
+                        "review": {
+                                    "user": "John Carter",
+                                    "comment": "Affordable and decent performance. Good for casual gaming.",
+                                    "stars": 4
+                        }
+            },
+            {
+                        "product_id": "PHN3001",
+                        "product_title": "iPhone 15 Pro Max",
+                        "product_image": "https://i.postimg.cc/nLMB18jh/i-Phone-15pro.jpg",
+                        "category": "Smartphone",
+                        "price": 1199.00,
+                        "description": "Flagship Apple phone with A17 Pro chip and stunning Titanium design.",
+                        "Specification": [
+                                    "A17 Pro chip",
+                                    "6.7\" Super Retina XDR",
+                                    "Triple 48MP Camera",
+                                    "USB-C",
+                                    "Face ID"
+                        ],
+                        "availability": true,
+                        "rating": 4.9,
+                        "brand": "Apple",
+                        "review": {
+                                    "user": "Alicia Gomez",
+                                    "comment": "Camera quality is phenomenal! Battery life could be a bit better though.",
+                                    "stars": 4
+                        }
+            },
+            {
+                        "product_id": "WAT2001",
+                        "product_title": "Samsung Galaxy Watch 6",
+                        "product_image": "https://i.postimg.cc/7ZHgfJq7/galaxy-watch6.webp",
+                        "category": "Smartwatch",
+                        "price": 299.99,
+                        "description": "Smartwatch with health tracking, sleep monitoring, and AMOLED display.",
+                        "Specification": [
+                                    "BioActive Sensor",
+                                    "Sleep Coaching",
+                                    "Water Resistant 5ATM",
+                                    "1.5\" AMOLED Display"
+                        ],
+                        "availability": true,
+                        "rating": 4.5,
+                        "brand": "Samsung",
+                        "review": {
+                                    "user": "Jason Kim",
+                                    "comment": "Feature-packed and stylish. Love the workout tracking features.",
+                                    "stars": 5
+                        }
+            },
+            {
+                        "product_id": "WAT2002",
+                        "product_title": "Amazfit GTS 4 Mini",
+                        "product_image": "https://i.postimg.cc/4NTvRFMW/gts-4-mini-01.jpg",
+                        "category": "Smartwatch",
+                        "price": 119.99,
+                        "description": "Lightweight fitness-focused smartwatch with over 120 sports modes.",
+                        "Specification": [
+                                    "Alexa Built-in",
+                                    "5 ATM Water Resistance",
+                                    "120+ Sports Modes",
+                                    "1.65\" AMOLED Display"
+                        ],
+                        "availability": true,
+                        "rating": 4.4,
+                        "brand": "Amazfit",
+                        "review": {
+                                    "user": "Lina Rodriguez",
+                                    "comment": "Best value smartwatch. Long battery life and accurate tracking.",
+                                    "stars": 5
+                        }
+            },
+            {
+                        "product_id": "TAB4001",
+                        "product_title": "iPad Air 5th Gen",
+                        "product_image": "https://i.postimg.cc/TYqVdJvf/ipad-air-5.jpg",
+                        "category": "Tablet",
+                        "price": 599.00,
+                        "description": "Lightweight and powerful iPad with M1 chip and Apple Pencil support.",
+                        "Specification": [
+                                    "Apple M1 Chip",
+                                    "10.9\" Liquid Retina",
+                                    "64GB Storage",
+                                    "Touch ID",
+                                    "Wi-Fi"
+                        ],
+                        "availability": true,
+                        "rating": 4.8,
+                        "brand": "Apple",
+                        "review": {
+                                    "user": "Mohammed Zaid",
+                                    "comment": "Perfect for note-taking, drawing, and media. Super smooth performance.",
+                                    "stars": 5
+                        }
+            }
+]
