@@ -35,7 +35,7 @@
                                     "256GB SSD",
                                     "13.6  Liquid Retina Display"
                         ],
-                        "availability": true,
+                        "availability": false,
                         "rating": 4.9,
                         "brand": "Apple",
                         "review": {
@@ -102,7 +102,7 @@
                                     "512GB SSD",
                                     "14  FHD NanoEdge Display"
                         ],
-                        "availability": true,
+                        "availability": false,
                         "rating": 4.4,
                         "brand": "Asus",
                         "review": {
@@ -148,7 +148,7 @@
                                     "USB-C",
                                     "Face ID"
                         ],
-                        "availability": true,
+                        "availability": false,
                         "rating": 4.9,
                         "brand": "Apple",
                         "review": {

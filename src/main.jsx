@@ -8,6 +8,8 @@ import Error_page from "./pages/Error_page.jsx";
 import Statistic from "./pages/Statistic.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Product_details from "./components/products/Product_details.jsx";
+import Cart from "./components/cart/Cart.jsx";
+import Wishlist from "./components/wishlist/Wishlist.jsx";
 
 const router = createBrowserRouter([
             {
@@ -34,13 +36,21 @@ const router = createBrowserRouter([
                                                             const response = await fetch("/products.json");
                                                             const data = await response.json();
                                                             const product = data.find(product => product.product_id === params.product_id);
-                                                            
-                                                            if(!product) {
+
+                                                            if (!product) {
                                                                         return <p>product is not found</p>
                                                             }
-                                                            
+
                                                             return product;
                                                 }
+                                    },
+                                    {
+                                                path: "/cart",
+                                                element: <Cart />,
+                                    },
+                                    {
+                                                path: "/wishlist",
+                                                element: <Wishlist />
                                     }
                         ]
             },

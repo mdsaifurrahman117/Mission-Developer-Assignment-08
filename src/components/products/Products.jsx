@@ -19,8 +19,8 @@ const Products = () => {
             return (
                         <section className="w-11/12 mx-auto mt-80 mb-20">
                                     <h1 className="text-4xl text-center font-sora">Explore Cutting-Edge Gadgets</h1>
-                                    <div className="flex flex-row justify-between mt-10">
-                                                <aside className="flex flex-col gap-3 justify-center h-90 bg-base-100 shadow-sm p-10 rounded-xl">
+                                    <div className="flex flex-col md:flex-row justify-between gap-5 mt-10">
+                                                <aside className="overflow-y-scroll md:overflow-hidden flex md:flex-col gap-3 md:justify-center  md:h-90 bg-base-100 shadow-sm p-10 rounded-xl">
                                                             <Button
                                                                         className={"btn bg-[#9538E2] text-white font-sora rounded-full"}
                                                                         name={"All Products"}
@@ -52,7 +52,7 @@ const Products = () => {
                                                                         onClick={handle_click}
                                                             ></Button>
                                                 </aside>
-                                                <div className="grid md:grid-cols-3 gap-3">
+                                                <div className="grid md:grid-cols-3 gap-3 justify-center">
                                                             {
                                                                         products.map(product =>
                                                                                     <Product

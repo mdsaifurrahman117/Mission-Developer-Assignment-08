@@ -16,7 +16,7 @@ const Product = ({ product }) => {
                                     </figure>
                                     <div className="card-body">
                                                 <h2 className="card-title font-sora">{product_title}</h2>
-                                                <h2 className="text-[15px] font-sora">Price : {price}</h2>
+                                                <h2 className="text-[15px] font-sora">Price : ${price}</h2>
                                                 <div className="card-actions">
                                                             <Link
                                                                         to={`/product-details/${product_id}`}

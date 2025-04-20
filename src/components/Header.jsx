@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router';
+import { Link, NavLink, useLocation } from 'react-router';
 import { FaCartShopping, FaHeart } from "react-icons/fa6";
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
                                                 <div className="navbar-start">
                                                             <NavLink 
                                                                         to={"/"}
-                                                                        className={` font-sora font-semibold text-xl 
+                                                                        className={` md:ml-3 font-sora font-semibold text-xl 
                                                                         ${location.pathname === "/" ? "text-white" : "text-black"}`}
                                                             >Gadget Heaven</NavLink>
                                                 </div>
@@ -41,12 +41,14 @@ const Header = () => {
                                                 </div>
                                                 <div className="navbar-end flex flex-row gap-3">
                                                             <div className="flex gap-3 items-center justify-center">
-                                                                        <button
-                                                                                    className={location.pathname === "/" ? "bg-white cursor-pointer p-2 rounded-full" : "bg-base-200 "}
-                                                                        ><FaCartShopping /></button>
-                                                                        <button
-                                                                                    className={location.pathname === "/" ? "bg-white cursor-pointer p-2 rounded-full" : "bg-base-200"}
-                                                                        > <FaHeart /></button>
+                                                                        <Link
+                                                                                    to={"/cart"}
+                                                                                    className={` cursor-pointer p-2 rounded-full shadow-sm ${location.pathname === "/" ? "bg-white" : "bg-base-200 "}`}
+                                                                        ><FaCartShopping /></Link>
+                                                                        <Link
+                                                                                    to={"/wishlist"}
+                                                                                    className={` cursor-pointer p-2 rounded-full shadow-sm ${location.pathname === "/" ? "bg-white" : "bg-base-200"}`}
+                                                                        > <FaHeart /></Link>
                                                             </div>
                                                             <div className="dropdown dropdown-end">
                                                                         <div

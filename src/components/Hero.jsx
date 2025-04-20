@@ -11,7 +11,9 @@ const Hero = () => {
                                                             <button className=" font-sora bg-white text-[#9538E2] py-2 px-4 cursor-pointer rounded-full ">Shop Now</button>
                                                 </div>
                                     </section>
-                                    <figure className="w-8/12 h-96 mx-auto absolute top-[90%] left-[17%] border border-white bg-[rgba(255,255,255,0.30)] p-5 rounded-xl">
+                                    <figure className="md:w-8/12 md:h-96 mx-auto absolute top-[500px] md:top-[90%] md:left-[17%] 
+                                                border border-white bg-[rgba(255,255,255,0.30)] p-5 rounded-xl"
+                                    >
                                                 <img src={Banner} alt="banner image" className="w-full h-full object-cover rounded-xl" />
                                     </figure>
                         </>

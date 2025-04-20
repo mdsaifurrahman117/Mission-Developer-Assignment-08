@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Error_page = () => {
+const Wishlist = () => {
             return (
                         <section className="w-11/12 mx-auto my-20">
-                                    <h1>404</h1>
-                                    <h2>No product found.</h2>
+                                    <h1>Wishlist is here</h1>
                         </section>
             );
 };
 
-export default Error_page;
+export default Wishlist;
