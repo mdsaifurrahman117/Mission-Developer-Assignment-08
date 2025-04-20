@@ -2,15 +2,18 @@ import React from 'react';
 import { useLoaderData } from 'react-router';
 import Button from '../Button';
 import { FaHeart, FaStar } from 'react-icons/fa6';
+import { add_to_cart } from '../../utility/add_to_cart';
 
 const Product_details = () => {
 
             const product = useLoaderData();
 
-            console.log(product)
-
             // destructuring products product
-            const { product_title, product_image, price, description, Specification, availability, rating } = product;
+            const { product_id, product_title, product_image, price, description, Specification, availability, rating } = product;
+
+            const handle_add_to_cart = (id) => {
+                        add_to_cart(id)
+            }
 
             return (
                         <section className="w-11/12 mx-auto my-20 bg-primary rounded-xl pt-20 pb-50">
@@ -43,6 +46,7 @@ const Product_details = () => {
                                                                         <div className="flex flex-row gap-3">
                                                                                     <Button
                                                                                                 name={"Add to Cart"}
+                                                                                                onClick={() => handle_add_to_cart(product_id)}
                                                                                                 className={"btn bg-base-100 border-[#9538E2] text-[#9538E2] font-sora rounded-full"}
                                                                                     ></Button>
                                                                                     <Button
