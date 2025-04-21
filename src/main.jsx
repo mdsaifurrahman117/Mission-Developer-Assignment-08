@@ -1,4 +1,4 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import './index.css'
@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Product_details from "./components/products/Product_details.jsx";
 import Cart from "./components/cart/Cart.jsx";
 import Wishlist from "./components/wishlist/Wishlist.jsx";
+import { ToastContainer } from 'react-toastify';
 
 const router = createBrowserRouter([
             {
@@ -27,7 +28,12 @@ const router = createBrowserRouter([
                                     },
                                     {
                                                 path: "/dashboard",
-                                                element: <Dashboard />
+                                                element: <Dashboard />,
+                                                loader: async () => {
+                                                            const response = await fetch("/products.json");
+                                                            const data = await response.json();
+                                                            return data;
+                                                }
                                     },
                                     {
                                                 path: "/product-details/:product_id",
@@ -47,7 +53,17 @@ const router = createBrowserRouter([
                                     {
                                                 path: "/cart",
                                                 element: <Cart />,
-                                                loader: () => fetch("/products.json")
+                                                loader: async ({ params }) => {
+                                                            const response = await fetch("/products.json");
+                                                            const data = await response.json();
+                                                            const product = data.find(product => product.product_id === params.product_id);
+
+                                                            if (!product) {
+                                                                        return <p>product is not found</p>
+                                                            }
+
+                                                            return product;
+                                                }
                                     },
                                     {
                                                 path: "/wishlist",
@@ -60,5 +76,8 @@ const router = createBrowserRouter([
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
-            <RouterProvider router={router} />
+            <StrictMode>
+                        <RouterProvider router={router} />
+                        <ToastContainer />
+            </StrictMode>
 );

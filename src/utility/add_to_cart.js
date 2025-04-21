@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 // getting stored cart data
 const get_stored_cart = () => {
             const stored_cart_string = localStorage.getItem("cart_item")
@@ -14,11 +16,12 @@ const add_to_cart = ( id ) => {
             const stored_cart = get_stored_cart();
 
             if ( stored_cart.includes(id) ) {
-                        console.log("product is already in the cart");
+                        toast.error("already in cart")
             } else {
                         stored_cart.push(id);
                         const stored_cart_string = JSON.stringify(stored_cart);
-                        localStorage.setItem("cart_item", stored_cart_string)
+                        localStorage.setItem("cart_item", stored_cart_string);
+                        toast("added to cart")
             }
 }
 
