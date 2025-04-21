@@ -10,7 +10,7 @@ const Cart_product = ({ item }) => {
                                                 <img
                                                             src={product_image}
                                                             alt="Shoes"
-                                                            className="rounded-xl md:w-32 p-2" />
+                                                            className="rounded-xl md:w-44 md:h-32 object-cover p-2" />
                                     </figure>
                                     <div className="card-body">
                                                 <h2 className="card-title font-sora">{product_title}</h2>

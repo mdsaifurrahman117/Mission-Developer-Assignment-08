@@ -27,21 +27,17 @@ const Wishlist = () => {
             }, [])
 
             return (
-                        <section className="w-11/12 mx-auto my-20">
-                                    <div className="bg-primary rounded-xl py-20 space-y-4">
-                                                <h1 className="text-4xl text-center text-white font-sora">Wishlist</h1>
-                                    </div>
-                                    <div className="flex flex-col gap-5">
-                                                {
-                                                            wishlist.map((item, idx) =>
-                                                                        <Wishlist_product
-                                                                                    key={idx}
-                                                                                    item={item}
-                                                                        ></Wishlist_product>
-                                                            )
-                                                }
-                                    </div>
-                        </section>
+                        <div className="flex flex-col gap-5">
+                                                <h1 className="font-sora text-2xl mt-10">Wishlist</h1>
+                                    {
+                                                wishlist.map((item, idx) =>
+                                                            <Wishlist_product
+                                                                        key={idx}
+                                                                        item={item}
+                                                            ></Wishlist_product>
+                                                )
+                                    }
+                        </div>
             );
 };
 

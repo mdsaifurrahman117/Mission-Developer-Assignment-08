@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import { Link, NavLink, useLocation } from 'react-router';
+import { NavLink, useLocation } from 'react-router';
 import { FaCartShopping, FaHeart } from "react-icons/fa6";
+import Button from './Button';
 
 const Header = () => {
 
@@ -41,14 +42,14 @@ const Header = () => {
                                                 </div>
                                                 <div className="navbar-end flex flex-row gap-3">
                                                             <div className="flex gap-3 items-center justify-center">
-                                                                        <Link
-                                                                                    to={"/cart"}
+                                                                        <Button
+                                                                                    name={<FaCartShopping />}
                                                                                     className={` cursor-pointer p-2 rounded-full shadow-sm ${location.pathname === "/" ? "bg-white" : "bg-base-200 "}`}
-                                                                        ><FaCartShopping /></Link>
-                                                                        <Link
-                                                                                    to={"/wishlist"}
+                                                                        ></Button>
+                                                                        <Button
+                                                                                    name={<FaHeart />}
                                                                                     className={` cursor-pointer p-2 rounded-full shadow-sm ${location.pathname === "/" ? "bg-white" : "bg-base-200"}`}
-                                                                        > <FaHeart /></Link>
+                                                                        ></Button>
                                                             </div>
                                                             <div className="dropdown dropdown-end">
                                                                         <div

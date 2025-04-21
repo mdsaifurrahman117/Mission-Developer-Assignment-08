@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Cart from './../components/cart/Cart';
+import Cart from '../components/cart/Cart';
 import 'react-tabs/style/react-tabs.css';
 import Button from '../components/Button';
 import Wishlist from '../components/wishlist/Wishlist';
