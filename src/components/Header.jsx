@@ -6,13 +6,13 @@ import Button from './Button';
 const Header = () => {
 
             const location = useLocation();
-            useEffect( () => {location}, [] );
+            useEffect(() => { location }, []);
 
             return (
                         <header className={` fixed top-0 z-[999] w-full mx-auto shadow-sm ${location.pathname === "/" ? "bg-primary top-0 " : "bg-base-100 "} `}>
                                     <nav className="w-11/12 mx-auto flex flex-row py-3">
                                                 <div className="navbar-start">
-                                                            <NavLink 
+                                                            <NavLink
                                                                         to={"/"}
                                                                         className={` md:ml-3 font-sora font-semibold text-xl 
                                                                         ${location.pathname === "/" ? "text-white" : "text-black"}`}
@@ -38,6 +38,12 @@ const Header = () => {
                                                                                                 ${location.pathname === "/" ? "text-white" : "text-black"}
                                                                                     `}
                                                                         >Dashboard</NavLink>
+                                                                        <NavLink
+                                                                                    to={"/reviews"}
+                                                                                    className={` font-sora 
+                                                                                                ${location.pathname === "/" ? "text-white" : "text-black"}
+                                                                                    `}
+                                                                        >Reviews</NavLink>
                                                             </ul>
                                                 </div>
                                                 <div className="navbar-end flex flex-row gap-3">
@@ -88,6 +94,10 @@ const Header = () => {
                                                                                                 to={"/dashboard"}
                                                                                                 className="font-sora text-black"
                                                                                     >Dashboard</NavLink>
+                                                                                    <NavLink
+                                                                                                to={"/reviews"}
+                                                                                                className="font-sora text-black"
+                                                                                    >Reviews</NavLink>
                                                                         </ul>
                                                             </div>
                                                 </div>

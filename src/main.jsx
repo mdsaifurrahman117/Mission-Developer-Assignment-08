@@ -11,6 +11,7 @@ import Product_details from "./components/products/Product_details.jsx";
 import Cart from "./components/cart/Cart.jsx";
 import Wishlist from "./components/wishlist/Wishlist.jsx";
 import { ToastContainer } from 'react-toastify';
+import Reviews from './pages/reviews/Reviews';
 
 const router = createBrowserRouter([
             {
@@ -34,6 +35,15 @@ const router = createBrowserRouter([
                                     {
                                                 path: "/dashboard",
                                                 element: <Dashboard />,
+                                                loader: async () => {
+                                                            const response = await fetch("/products.json");
+                                                            const data = await response.json();
+                                                            return data;
+                                                }
+                                    },
+                                    {
+                                                path: "/reviews",
+                                                element: <Reviews/> ,
                                                 loader: async () => {
                                                             const response = await fetch("/products.json");
                                                             const data = await response.json();
