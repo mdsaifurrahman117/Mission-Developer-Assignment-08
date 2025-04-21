@@ -3,6 +3,7 @@ import Cart from '../components/cart/Cart';
 import 'react-tabs/style/react-tabs.css';
 import Button from '../components/Button';
 import Wishlist from '../components/wishlist/Wishlist';
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
 
@@ -13,6 +14,9 @@ const Dashboard = () => {
 
             return (
                         <section className="w-11/12 mx-auto my-20">
+                                    <Helmet>
+                                                <title>Dashboard | Gadget Heaven</title>
+                                    </Helmet>
                                     <div className="bg-primary rounded-xl py-20 space-y-4">
                                                 <h1 className="font-sora text-white text-center text-4xl">Dashboard</h1>
                                                 <p className="w-8/12 mx-auto font-sora text-white text-center">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

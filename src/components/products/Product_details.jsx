@@ -4,6 +4,7 @@ import Button from '../Button';
 import { FaHeart, FaStar } from 'react-icons/fa6';
 import { add_to_cart } from '../../utility/add_to_cart';
 import { add_to_wishlist } from '../../utility/add_to_wishlist';
+import { Helmet } from 'react-helmet';
 
 const Product_details = () => {
 
@@ -24,6 +25,9 @@ const Product_details = () => {
 
             return (
                         <section className="w-11/12 mx-auto my-20 bg-primary rounded-xl pt-20 pb-50">
+                                    <Helmet>
+                                                <title>Details | Gadget Heaven</title>
+                                    </Helmet>
                                     <h1 className="text-4xl font-sora text-center text-white">Product Details</h1>
                                     <p className="text-lg font-sora w-8/12 mx-auto my-5 text-center text-white">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
                                     <div className="w-10/12 md:w-8/12 mx-auto bg-base-200 shadow-sm rounded-xl absolute md:top-[50%] left-[8.5%] md:left-[17%]">

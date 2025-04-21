@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { get_stored_cart } from '../utility/add_to_cart';
+import { Helmet } from 'react-helmet';
 
 const Statistic = () => {
 
@@ -29,6 +30,9 @@ const Statistic = () => {
 
             return (
                         <section className="w-11/12 mx-auto my-20">
+                                    <Helmet>
+                                                <title>Statistic | Gadget Heaven</title>
+                                    </Helmet>
                                     <div className="bg-primary rounded-xl py-20 space-y-4">
                                                 <h1 className="font-sora text-4xl text-white text-center">Statistic</h1>
                                                 <p className="w-8/12 mx-auto text-center text-white font-sora">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
