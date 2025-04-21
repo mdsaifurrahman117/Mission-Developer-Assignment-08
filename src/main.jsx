@@ -53,21 +53,20 @@ const router = createBrowserRouter([
                                     {
                                                 path: "/cart",
                                                 element: <Cart />,
-                                                loader: async ({ params }) => {
+                                                loader: async () => {
                                                             const response = await fetch("/products.json");
                                                             const data = await response.json();
-                                                            const product = data.find(product => product.product_id === params.product_id);
-
-                                                            if (!product) {
-                                                                        return <p>product is not found</p>
-                                                            }
-
-                                                            return product;
+                                                            return data;
                                                 }
                                     },
                                     {
                                                 path: "/wishlist",
-                                                element: <Wishlist />
+                                                element: <Wishlist />,
+                                                loader: async () => {
+                                                            const response = await fetch("/products.json");
+                                                            const data = await response.json();
+                                                            return data;
+                                                }
                                     }
                         ]
             },

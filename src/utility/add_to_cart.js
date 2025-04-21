@@ -16,12 +16,12 @@ const add_to_cart = ( id ) => {
             const stored_cart = get_stored_cart();
 
             if ( stored_cart.includes(id) ) {
-                        toast.error("already in cart")
+                        toast.error("Already in cart")
             } else {
                         stored_cart.push(id);
                         const stored_cart_string = JSON.stringify(stored_cart);
                         localStorage.setItem("cart_item", stored_cart_string);
-                        toast("added to cart")
+                        toast("Added to cart")
             }
 }
 

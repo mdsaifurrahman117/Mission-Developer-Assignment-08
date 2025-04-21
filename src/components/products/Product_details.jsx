@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router';
 import Button from '../Button';
 import { FaHeart, FaStar } from 'react-icons/fa6';
 import { add_to_cart } from '../../utility/add_to_cart';
+import { add_to_wishlist } from '../../utility/add_to_wishlist';
 
 const Product_details = () => {
 
@@ -11,8 +12,14 @@ const Product_details = () => {
             // destructuring products product
             const { product_id, product_title, product_image, price, description, Specification, availability, rating } = product;
 
+            // handle add to cart
             const handle_add_to_cart = (id) => {
                         add_to_cart(id)
+            }
+
+            // handle add to wishlist
+            const handle_add_to_wishlist = (id) => {
+                        add_to_wishlist(id)
             }
 
             return (
@@ -51,6 +58,7 @@ const Product_details = () => {
                                                                                     ></Button>
                                                                                     <Button
                                                                                                 name={<FaHeart />}
+                                                                                                onClick={ () => handle_add_to_wishlist(product_id) }
                                                                                                 className={"btn bg-base-100 border-[#9538E2] text-[#9538E2] font-sora rounded-full"}
                                                                                     ></Button>
                                                                         </div>

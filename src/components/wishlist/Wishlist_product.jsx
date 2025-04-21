@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cart_product = ({ item }) => {
+const Wishlist_product = ({ item }) => {
 
             const { product_title, product_image, description, price } = item;
 
@@ -21,4 +21,4 @@ const Cart_product = ({ item }) => {
             );
 };
 
-export default Cart_product;
+export default Wishlist_product;
